@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Place Order | IGNITE</title>
+  <link rel="stylesheet" href="css/placeorer.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="logo">IGNITE</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="your-cart.html">Cart</a></li>
+    </ul>
+  </nav>
+
+  <main class="place-order-form">
+    <h2>Place Your Order</h2>
+    <section id="orderSummary" class="order-summary">
+  <h3>Your Order</h3>
+  <ul id="orderItems" class="item-list"></ul>
+  <p class="order-total">Total: ₹<span id="summaryTotal">0</span></p>
+</section>
+
+    <form id="orderForm">
+      <label>Full Name</label>
+      <input type="text" name="name" placeholder="John Doe" required />
+
+      <label>Phone Number</label>
+      <input type="tel" name="phone" placeholder="9876543210" required pattern="[0-9]{10}" />
+
+      <label>Address</label>
+      <textarea name="address" placeholder="123 Ritual Lane, Dark City" required></textarea>
+
+      <label>Payment Method</label>
+      <div class="radio-group">
+        <label><input type="radio" name="payment" value="cod" checked /> Cash on Delivery</label>
+        <label><input type="radio" name="payment" value="online" /> Pay Online (Card/UPI)</label>
+      </div>
+
+      <button type="submit">Confirm Order</button>
+    </form>
+
+    <div id="confirmationMessage" class="confirmation"></div>
+  </main>
+
+  <script src="js/placeorder.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Track Your Order | IGNITE</title>
+  <link rel="stylesheet" href="css/track.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="logo">IGNITE</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="track.html" class="active">Track Order</a></li>
+    </ul>
+  </nav>
+
+  <main class="track-panel">
+    <h2>Track Your Order</h2>
+    <p>Enter your order ID below to check the status of your delivery.</p>
+
+    <form id="trackForm">
+      <input type="text" id="orderId" placeholder="e.g. IGNITE001" required />
+      <button type="submit">Track</button>
+    </form>
+
+    <div id="orderStatus" class="status-output"></div>
+  </main>
+
+  <script src="js/track.js"></script>
+</body>
+</html>

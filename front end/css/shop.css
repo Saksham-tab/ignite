@@ -1,0 +1,233 @@
+/* IGNITE Shop Page Styles */
+:root {
+    --ritual-black: #0b0b0b;
+    --blood-red: #7B1E1E;
+    --ember-glow: #fe0101;
+    --ash-gray: #2B2B2B;
+    --highlight: #CFA849;
+     --dark-bg: #111;
+    --light-text: #f8f6f0;
+    --accent: #a67c52;
+    --deep-red: #8b0000;
+}
+/* IGNITE Shop Page Styles */
+
+body {
+  background: var(--ritual-black);
+  color: #fff;
+  font-family: 'Cormorant Garamond', serif;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background: var(--ash-gray);
+  border-bottom: 1px solid var(--blood-red);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav .logo {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 1.8rem;
+  color: var(--ember-glow);
+}
+
+.nav .nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav .nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav .nav-links li a:hover,
+.nav .nav-links li a.active {
+  color: var(--ember-glow);
+}
+
+.shop-wrapper {
+  padding: 50px 5%;
+}
+
+.shop-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.shop-controls select,
+.shop-controls button {
+  background: var(--ash-gray);
+  border: 1px solid var(--blood-red);
+  color: #fff;
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.shop-controls button.active {
+  background: var(--blood-red);
+  color: var(--ember-glow);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  transition: all 0.3s ease;
+}
+
+.product-grid.list-view {
+  display: block;
+}
+
+.product-card {
+  background: var(--ash-gray);
+  border: 1px solid var(--blood-red);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(226, 88, 34, 0.5);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-info {
+  padding: 20px;
+}
+
+.product-info h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  color: var(--ember-glow);
+}
+
+.price-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.add-to-cart {
+  background: var(--blood-red);
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-family: 'Cinzel Decorative', serif;
+}
+
+.add-to-cart:hover {
+  background: var(--ember-glow);
+  color: var(--ritual-black);
+}
+.side-panel {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 350px;
+  height: 100%;
+  background: var(--ash-gray);
+  border-left: 2px solid var(--blood-red);
+  box-shadow: -10px 0 30px rgba(123, 30, 30, 0.5);
+  z-index: 10001;
+  padding: 40px 30px;
+  transition: right 0.5s ease;
+  color: white;
+  overflow-y: auto;
+}
+
+.side-panel.active {
+  right: 0;
+}
+
+.panel-close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--blood-red);
+  cursor: pointer;
+}
+
+.side-panel h2 {
+  font-family: 'Cinzel Decorative', serif;
+  margin-bottom: 20px;
+  color: var(--ember-glow);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form input {
+  padding: 12px;
+  border: 1px solid var(--blood-red);
+  background: var(--ritual-black);
+  color: white;
+  border-radius: 6px;
+}
+
+.toggle-link {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+#cartItems {
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .shop-controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .price-action {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .nav .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+  }
+}

@@ -1,0 +1,105 @@
+body {
+  background: #0b0b0b;
+  color: white;
+  font-family: 'Cormorant Garamond', serif;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background: #2B2B2B;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .logo {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 1.8rem;
+  color: #fe0101;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a.active {
+  color: #fe0101;
+}
+
+.cart-wrapper {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.cart-list {
+  border-top: 1px solid #7B1E1E;
+  margin-top: 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid #444;
+}
+
+.cart-item h4 {
+  margin: 0;
+  color: #fe0101;
+}
+
+.cart-summary {
+  margin-top: 30px;
+  text-align: right;
+}
+
+.checkout-btn {
+  background: linear-gradient(45deg, #7B1E1E, #fe0101);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-family: 'Cinzel Decorative', serif;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.checkout-btn:hover {
+  background: linear-gradient(45deg, #fe0101, #7B1E1E);
+  transform: translateY(-2px);
+}
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #444;
+  gap: 10px;
+}
+
+.remove-btn {
+  background: #fe0101;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-family: 'Cinzel Decorative', serif;
+  transition: background 0.3s ease;
+}
+
+.remove-btn:hover {
+  background: #CFA849;
+  color: black;
+}

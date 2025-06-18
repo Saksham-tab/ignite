@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGNITE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div class="login-panel" id="loginPanel">
+  <button class="login-close" id="closeLogin">&times;</button>
+
+  <!-- Login Form -->
+  <div id="loginFormSection">
+    <h2>Enter the Circle</h2>
+    <form class="login-form">
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <label class="remember">
+        <input type="checkbox" />
+        Remember me
+      </label>
+      <button type="submit" class="login-submit">Login</button>
+      <p class="toggle-link">Not a member? <a href="#" id="showSignup">Create an account</a></p>
+    </form>
+  </div>
+
+  <!-- Signup Form -->
+  <div id="signupFormSection" style="display: none;">
+    <h2>Join the Circle</h2>
+    <form class="login-form">
+      <input type="text" placeholder="First Name" required />
+      <input type="text" placeholder="Last Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <input type="password" placeholder="Confirm Password" required />
+      <input type="date" placeholder="Birthdate" required />
+      <label class="remember">
+        <input type="checkbox" required />
+        I accept the <a href="#" class="terms-link">Terms of the Circle</a>
+      </label>
+      <button type="submit" class="login-submit">Create Account</button>
+      <p class="toggle-link">Already have an account? <a href="#" id="showLogin">Back to login</a></p>
+    </form>
+  </div>
+</div>
+    
+    <div class="floating-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+</div>
+    <!-- Custom Cursor -->
+    <!--div class="cursor"></div-->
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="blood-drop" id="bloodDrop"></div>
+        <div class="splash-container" id="splashContainer"></div>
+        <div class=" logo-design"><img src=""></div>
+        <div class="ignite-text" id="igniteText">IGNITE</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content" id="mainContent">
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="nav-content">
+                <div class="logo">IGNITE</div>
+                <ul class="nav-links">
+                    <li><a href="shop.html">Shop</a></li>
+                    <li class="dropdown">
+    <a href="#bloodbound" class="dropdown-toggle">Collection ▾</a>
+    <ul class="dropdown-menu">
+        <li><a href="#collection-darkness">Sacred Darkness</a></li>
+        <li><a href="#collection-unity">Unity Through Fire</a></li>
+        <li><a href="#collection-knowledge">Ancient Knowledge</a></li>
+        <li><a href="#collection-transformation">Transformation</a></li>
+    </ul>
+</li>
+
+                    <li><a href="#circle">The Circle</a></li>
+                    <li><a href="#" id="toggleSearch">Search</a></li>
+                     <li><a href="track.html">Track Order</a></li>
+                    <li><a href="#" id="openProfile">join</a></li>
+                <div class="search-container" id="searchContainer">
+  <input type="text" placeholder="Search clothing, rituals..." id="searchInput" />
+  <button id="closeSearchBar" class="search-close-btn">&times;</button>
+</div></ul>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>IGNITE</h1>
+                <p>Embrace the darkness. Kindle the flame within. Join those who seek the deeper truths beyond the veil of ordinary existence.</p>
+                <button class="cta-button" onclick="document.getElementById('join').scrollIntoView({behavior: 'smooth'})">
+                    Awaken Your Fire
+                </button>
+            </div>
+        </section>
+
+        <!-- Our Flame Section -->
+        <section class="section fade-up" id="flame">
+            <h2>Our Flame</h2>
+            <p>In the beginning, there was only darkness. From this primordial void emerged the first spark—a flame that would not be extinguished. We are the keepers of this ancient fire, the guardians of forgotten wisdom that burns eternal in the shadows of the world.</p>
+            <p>Our awakening comes not through light, but through the embrace of what others fear. In darkness, we find clarity. In silence, we hear the whispers of truth. In solitude, we discover the power that lies dormant within us all.</p>
+        </section>
+
+        <!-- Bloodbound Section -->
+        <section class="section fade-up" id="bloodbound">
+            <h2>Collection</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>The Sacred Darkness</h3>
+                    <p>We honor the shadow as much as the light, understanding that true wisdom comes from accepting all aspects of existence.</p>
+                </div>
+                <div class="card">
+                    <h3>Unity Through Fire</h3>
+                    <p>Bound by flame, united in purpose. Our bond transcends the material world, forged in the crucible of shared awakening.</p>
+                </div>
+                <div class="card">
+                    <h3>Ancient Knowledge</h3>
+                    <p>We preserve the old ways, the forgotten arts, the mysteries that modern world has abandoned in its rush toward empty light.</p>
+                </div>
+                <div class="card">
+                    <h3>Transformation</h3>
+                    <p>Through ritual and contemplation, we shed our former selves like serpents, emerging renewed and empowered.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Circle Section -->
+        <section class="section fade-up" id="circle">
+            <h2>The Circle</h2>
+            <p>Our gatherings are sacred. Each ritual, each ceremony, each communion strengthens the bonds that unite us and the flame that guides us.</p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>New Moon Gathering</h3>
+                    <p>Join us under the dark moon for meditation and the sharing of ancient wisdom. Every first Friday of the month.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Fire Ceremony</h3>
+                    <p>A ritual of renewal and transformation. Participants cast away their old selves and emerge reborn. Quarterly gatherings.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Shadow Work Sessions</h3>
+                    <p>Intensive workshops exploring the hidden aspects of consciousness and the power that lies within darkness.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Initiation Rites</h3>
+                    <p>For those ready to fully commit to the path. A profound ceremony of dedication and awakening. By invitation only.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join Section -->
+        <section class="section join-section fade-up" id="join">
+            <h2>Join the Fire</h2>
+            <p>Are you ready to step beyond the boundaries of ordinary existence? To embrace the flame that burns eternal? The circle calls to those who hear the whisper in the darkness.</p>
+            <div class="email-form">
+                <input type="email" class="email-input" placeholder="Enter your email to begin..." id="emailInput">
+                <button class="cta-button" onclick="joinIgnite()">Begin Awakening</button>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="social-links">
+                <a href="#">◯</a>
+                <a href="#">△</a>
+                <a href="#">☽</a>
+                <a href="#">☾</a>
+                <a href="#">✦</a>
+            </div>
+            <p>© 2025 IGNITE. All rituals reserved. | This is a work of fiction.</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+<!-- DISCOUNT POPUP -->
+<div id="offerPopup" style="display:none; position: fixed; z-index: 9999; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); backdrop-filter: blur(4px); display: flex; align-items: center; justify-content: center;">
+  <div style="background: #1a1a1a; padding: 30px 40px; border-radius: 12px; border: 2px solid #fe0101; width: 90%; max-width: 400px; color: white; font-family: 'Cormorant Garamond', serif; position: relative;">
+    
+    <button id="closeOffer" style="position: absolute; top: 10px; right: 15px; background: none; border: none; color: #fe0101; font-size: 1.5rem; cursor: pointer;">&times;</button>
+
+    <h2 style="color: #CFA849;">🔥 Unlock 10% Off</h2>
+    <p style="margin-bottom: 20px;">Enter your mobile number and email to receive your exclusive discount code:</p>
+
+    <input type="email" id="offerEmail" placeholder="Email" style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 6px; border: 1px solid #444; background: #0b0b0b; color: white;">
+    <input type="tel" id="offerPhone" placeholder="Phone Number" style="width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 6px; border: 1px solid #444; background: #0b0b0b; color: white;">
+
+    <button id="claimDiscount" style="width: 100%; padding: 12px; background: #fe0101; color: white; border: none; border-radius: 30px; font-family: 'Cinzel Decorative', serif; font-size: 1rem; cursor: pointer;">Claim Your 10% Discount</button>
+
+    <p id="popupSuccess" style="margin-top: 15px; display: none; color: #00ffae;">✔️ Discount code sent: <strong>IGNITE10</strong></p>
+  </div>
+</div>
+
+<script>
+  function joinIgnite() {
+    const email = document.getElementById("emailInput").value.trim();
+    if (email) {
+      alert("🔥 Welcome! You've joined the Circle.");
+    } else {
+      alert("Please enter a valid email.");
+    }
+  }
+
+  function triggerPopupAfterPreloader() {
+    if (!sessionStorage.getItem('IGNITE_POPUP_SHOWN')) {
+      setTimeout(() => {
+        document.getElementById("offerPopup").style.display = "flex";
+        sessionStorage.setItem('IGNITE_POPUP_SHOWN', "yes");
+      }, 7000); // 7 seconds AFTER preloader disappears
+    }
+  }
+
+  window.addEventListener("load", () => {
+    const preloader = document.getElementById("preloader");
+
+    // Simulate preloader fade-out + hiding (adjust if you use GSAP or another animation)
+    setTimeout(() => {
+      preloader.style.display = "none";
+
+      // Now start the popup countdown
+      triggerPopupAfterPreloader();
+    }, 10000); // ⏱ match this to your preloader animation duration in ms
+
+    // Popup close
+    document.getElementById("closeOffer").addEventListener("click", () => {
+      document.getElementById("offerPopup").style.display = "none";
+    });
+
+    // Discount claim logic
+    document.getElementById("claimDiscount").addEventListener("click", () => {
+      const email = document.getElementById("offerEmail").value.trim();
+      const phone = document.getElementById("offerPhone").value.trim();
+      const successMsg = document.getElementById("popupSuccess");
+
+      if (email && phone.match(/^\d{10}$/)) {
+        localStorage.setItem("IGNITE_EMAIL", email);
+        localStorage.setItem("IGNITE_PHONE", phone);
+        successMsg.style.display = "block";
+        successMsg.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        successMsg.style.display = "none";
+        alert("Please enter a valid 10-digit phone number and email.");
+      }
+    });
+  });
+</script>
+
+
+
+</body>
+</html>

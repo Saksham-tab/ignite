@@ -1,0 +1,93 @@
+body {
+  background: #0b0b0b;
+  color: white;
+  font-family: 'Cormorant Garamond', serif;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background: #2B2B2B;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 1.8rem;
+  color: #fe0101;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a.active {
+  color: #fe0101;
+}
+
+.track-panel {
+  max-width: 600px;
+  margin: 60px auto;
+  background: #1a1a1a;
+  padding: 40px;
+  border-radius: 10px;
+  border: 1px solid #7B1E1E;
+  text-align: center;
+}
+
+.track-panel h2 {
+  color: #fe0101;
+  margin-bottom: 10px;
+}
+
+.track-panel p {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+#trackForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#orderId {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #7B1E1E;
+  background: #0b0b0b;
+  color: white;
+  font-size: 1rem;
+}
+
+#trackForm button {
+  padding: 12px;
+  background: #fe0101;
+  color: white;
+  font-family: 'Cinzel Decorative', serif;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#trackForm button:hover {
+  background: #CFA849;
+  color: black;
+}
+
+.status-output {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #00ffae;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Cart | IGNITE</title>
+  <link rel="stylesheet" href="css/cart.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="logo">IGNITE</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="cart.html" class="active">Cart</a></li>
+    </ul>
+  </nav>
+
+  <main class="cart-wrapper">
+    <h2>Your Cart</h2>
+    <div id="cartList" class="cart-list"></div>
+
+    <div class="cart-summary">
+      <h3>Total: ₹<span id="cartTotal">0</span></h3>
+      <a href="placeorder.html" class="checkout-btn">Place Order</a>
+    </div>
+  </main>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>

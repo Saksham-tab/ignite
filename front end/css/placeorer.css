@@ -1,0 +1,127 @@
+body {
+  background: #0b0b0b;
+  color: white;
+  font-family: 'Cormorant Garamond', serif;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background: #2B2B2B;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 1.8rem;
+  color: #fe0101;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.place-order-form {
+  max-width: 600px;
+  margin: 60px auto;
+  background: #1a1a1a;
+  padding: 40px;
+  border-radius: 10px;
+  border: 1px solid #7B1E1E;
+}
+
+.place-order-form h2 {
+  color: #fe0101;
+  margin-bottom: 30px;
+}
+
+.place-order-form label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.place-order-form input,
+.place-order-form textarea {
+  width: 100%;
+  padding: 12px;
+  background: #0b0b0b;
+  border: 1px solid #7B1E1E;
+  border-radius: 6px;
+  color: white;
+  font-size: 1rem;
+}
+
+.radio-group {
+  margin-top: 10px;
+}
+
+.radio-group label {
+  display: block;
+  margin: 10px 0;
+}
+
+.place-order-form button {
+  margin-top: 30px;
+  padding: 12px 30px;
+  background: #fe0101;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.place-order-form button:hover {
+  background: #CFA849;
+  color: black;
+}
+
+.confirmation {
+  margin-top: 30px;
+  color: #00ffae;
+  font-weight: bold;
+}
+.order-summary {
+  margin-bottom: 30px;
+  border: 1px solid #444;
+  padding: 20px;
+  background: #141414;
+  border-radius: 8px;
+}
+
+.order-summary h3 {
+  color: #CFA849;
+  margin-bottom: 15px;
+}
+
+.item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+}
+
+.order-total {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #00ffae;
+}

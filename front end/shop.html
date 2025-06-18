@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IGNITE | Shop</title>
+  <link rel="stylesheet" href="css/shop.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="logo">IGNITE</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html" class="active">Shop</a></li>
+      <li><a href="profile.html" id="openProfile">Profile</a></li>
+      <li><a href="cart.html" id="navCartBtn">Cart (<span id="cartCount">0</span>)</a></li>
+    </ul>
+  </nav>
+
+  <main class="shop-wrapper">
+    <div class="shop-controls">
+      <select id="sortOptions">
+        <option value="default">Sort by</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="newest">Newest</option>
+      </select>
+      <div class="view-options">
+        <button id="gridView" class="active">Grid</button>
+        <button id="listView">List</button>
+      </div>
+    </div>
+
+    <section class="product-grid" id="productGrid">
+      <!-- Sample Product -->
+      <div class="product-card">
+  <img src="https://via.placeholder.com/300x400" alt="Mystic Hoodie" />
+  <div class="product-info">
+    <h3>Mystic Hoodie</h3>
+    <div class="price-action">
+      <span class="price">₹1299</span>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+      <!-- Add more product-card blocks as needed -->
+    </section>
+  </main>
+
+  <script src="js/shop.js"></script>
+</body>
+</html>
